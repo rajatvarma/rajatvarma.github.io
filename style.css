@@ -1,0 +1,62 @@
+html {
+  overflow-x: hidden;
+}
+
+.landing {
+    display: flex;
+}
+
+#rajatportal_icon {
+    font-family: 'Poppins', sans-serif;
+    color: #fe346e;
+    font-weight: 700;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 50px;
+    display: inline-grid;
+}
+
+#contact a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fe346e;
+    font-weight: 700;
+    padding: 50px;
+    display: inline-grid;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+
+#supermainheading {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 20%;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #111d5e;
+    font-weight: 900;
+    font-size: 70px;
+    min-width: 100%;
+}
+
+#introdesc {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 35%;
+    padding-top: 25px;
+    font-family: "Playfair Display";
+    color: #fe346e;
+    font-size: 20px;
+    min-width: 100%;
+}
+
+.separator {
+    display: inline-table;
+    min-width: 100%;
+    padding-top: 45%;
+}
