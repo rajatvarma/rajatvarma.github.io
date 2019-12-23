@@ -17,7 +17,8 @@
     padding: 10px;
 }
 
-#rajatportal_icon {
+#rajatportal_icon a {
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: #fe346e;
     font-weight: 700;
