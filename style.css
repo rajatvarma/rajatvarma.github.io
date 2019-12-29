@@ -17,17 +17,6 @@
     padding: 10px;
 }
 
-#rajatportal_icon a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #fe346e;
-    font-weight: 700;
-    position: absolute;
-    top: 30px;
-    left: 25%;
-    display: inline-grid;
-}
-
 #contact a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -35,8 +24,9 @@
     font-weight: 700;
     display: inline-grid;
     position: absolute;
+    font-size: 1.25em;
     top: 30px;
-    right: 25%;
+    right: 20%;
     
 }
 
@@ -85,25 +75,50 @@ pre {
 }
 
 .about {
+    margin-top: 20px;
     color: #111d5e;
     display: inline-block;
     font-family: 'Poppins';
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-left: 20%;
     margin-right: 20%;
     text-align: justify;
+    font-weight: 400;
 
 }
 
 .about #highlight{
     color: #fe346e;
     display: inline-grid;
-    
+    font-weight: 500;
+}
+
+.links {
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    vertical-align: middle;
+}
+
+.links img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    filter: invert(31%) sepia(23%) saturate(5657%) hue-rotate(319deg) brightness(104%) contrast(99%);
+    transition: ease-out 0.2s;
+    display: flex;
+}
+
+.links img:hover {
+    filter: invert(14%) sepia(96%) saturate(1277%) hue-rotate(210deg) brightness(81%) contrast(104%);
+    transition: ease-in 0.2s;
 }
 
 @media only screen and (max-width: 1000px) {
     .about {
-        position: absolute;
+        position: relative;
+        top: 10%;
+        display: block;
         margin-left: 2%;
         margin-right: 2%;
         font-size: 1em;
@@ -111,5 +126,16 @@ pre {
 
     #supermainheading{
         font-size: 3em;
+    }
+
+    .links {
+        position: absolute;
+        left: 20%;
+        right: 20%;
+    }
+
+    .links img {
+        display: inline;
+        padding: 7px;
     }
 }
