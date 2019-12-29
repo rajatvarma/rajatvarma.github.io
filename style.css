@@ -3,12 +3,12 @@
     max-width: 75%;
     max-height: 100%;
     display: inline-grid;
+    overflow-x: hidden;
 }
 
 .landing {
     display: flex;
-    min-height: 100%;
-    height: 100%;
+    min-height: 35%;
     min-width: 50%;
     max-width: 75%;
 }
@@ -23,9 +23,8 @@
     color: #fe346e;
     font-weight: 700;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 50px;
+    top: 30px;
+    left: 30px;
     display: inline-grid;
 }
 
@@ -34,11 +33,10 @@
     font-family: 'Poppins', sans-serif;
     color: #fe346e;
     font-weight: 700;
-    padding: 50px;
     display: inline-grid;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 30px;
+    right: 30px;
     
 }
 
@@ -83,4 +81,13 @@ pre {
     font-family: 'Merriweather';
     font-weight: 300;
     color: #111d5e;
+}
+
+.about {
+    left: 30%;
+    color: #111d5e;
+    display: inline-block;
+    padding-left: 10%;
+    font-family: 'Playfair Display';
+
 }
