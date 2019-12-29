@@ -1,12 +1,3 @@
-@media only screen and (max-width: 1000px) {
-    /* For mobile phones: */
-    .about {
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 0.75em;
-    }
-  }
-
 *body {
     min-width: 50%;
     max-width: 75%;
@@ -60,6 +51,7 @@
     font-weight: 900;
     font-size: 70px;
     min-width: 100%;
+    margin-bottom: auto;
 }
 
 #introdesc {
@@ -93,13 +85,31 @@ pre {
 }
 
 .about {
-    left: 45%;
     color: #111d5e;
     display: inline-block;
-    padding-left: 20%;
-    padding-right: 20%;
     font-family: 'Poppins';
     font-size: 1.5em;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: justify;
 
+}
+
+.about #highlight{
+    color: #fe346e;
+    display: inline-grid;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .about {
+        position: absolute;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1em;
+    }
+
+    #supermainheading{
+        font-size: 3em;
+    }
 }
