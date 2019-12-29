@@ -9,7 +9,7 @@
 .landing {
     display: flex;
     min-height: 35%;
-    min-width: 50%;
+    min-width: 40%;
     max-width: 75%;
 }
 
@@ -53,13 +53,7 @@
     font-family: "Playfair Display";
     color: #fe346e;
     font-size: 20px;
-    min-width: 100%;
-}
-
-.separator {
-    display: inline-table;
-    min-width: 100%;
-    padding-top: 45%;
+    min-width: 75%;
 }
 
 .title {
@@ -75,7 +69,7 @@ pre {
 }
 
 .about {
-    margin-top: 20px;
+    margin-top: 50px;
     color: #111d5e;
     display: inline-block;
     font-family: 'Poppins';
@@ -116,11 +110,10 @@ pre {
 
 @media only screen and (max-width: 1000px) {
     .about {
-        position: relative;
-        top: 10%;
+        position: absolute;
         display: block;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
         font-size: 1em;
     }
 
@@ -130,12 +123,16 @@ pre {
 
     .links {
         position: absolute;
-        left: 20%;
-        right: 20%;
+        display: flex;
+        min-width: 75%;
+        left: 0;
+        right: 0;
+        margin-left: 25%;
     }
 
     .links img {
-        display: inline;
-        padding: 7px;
+        display: inline-grid;
+        width: 20px;
+        height: 20px;
     }
 }
