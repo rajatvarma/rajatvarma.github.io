@@ -1,4 +1,18 @@
+:root {
+    --secondary: #3772FF;
+    --primary: #DF2935;
+    --tertiary: #CB9501;
+    --light-bg: #E6E8E6;
+    --dark-bg: #080708;
+}
+
+body {
+    background-color: var(--light-bg);
+    transition: ease-in-out 0.2s;
+}
+
 *body {
+    transition: 0.5s;
     min-width: 50%;
     max-width: 75%;
     max-height: 100%;
@@ -20,7 +34,7 @@
 #contact a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    color: #fe346e;
+    color: var(--tertiary);
     font-weight: 700;
     display: inline-grid;
     position: absolute;
@@ -30,6 +44,22 @@
     
 }
 
+#themeSwitcherButton {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 700;
+    display: inline-grid;
+    position: absolute;
+    font-size: 1.25em;
+    top: 30px;
+    left: 20%;
+    background-color: var(--tertiary);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #supermainheading {
     position: absolute;
     display: inline-block;
@@ -37,7 +67,7 @@
     top: 20%;
     left: 0;
     font-family: 'Playfair Display', sans-serif;
-    color: #111d5e;
+    color: var(--secondary);
     font-weight: 900;
     font-size: 70px;
     min-width: 100%;
@@ -51,7 +81,7 @@
     top: 35%;
     padding-top: 25px;
     font-family: "Playfair Display";
-    color: #fe346e;
+    color: var(--tertiary);
     font-size: 20px;
     min-width: 75%;
 }
@@ -59,18 +89,19 @@
 .title {
     font-family: 'Poppins';
     font-weight: 600;
-    color: #111d5e;
+    color: var(--primary);
 }
 
 pre {
     font-family: 'Merriweather';
     font-weight: 300;
-    color: #111d5e;
+    color: var(--primary);
 }
 
 .about {
+    transition: ease-in-out 0.2s;
     margin-top: 50px;
-    color: #111d5e;
+    color: var(--primary);
     display: inline-block;
     font-family: 'Poppins';
     font-size: 1.25em;
@@ -81,10 +112,11 @@ pre {
 
 }
 
+
 .about #highlight{
-    color: #fe346e;
+    color: var(--tertiary);
     display: inline-grid;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .links {
@@ -98,13 +130,13 @@ pre {
     width: 30px;
     height: 30px;
     padding: 10px;
-    filter: invert(31%) sepia(23%) saturate(5657%) hue-rotate(319deg) brightness(104%) contrast(99%);
+    filter: invert(37%) sepia(96%) saturate(3257%) hue-rotate(215deg) brightness(104%) contrast(101%);
     transition: ease-out 0.2s;
     display: flex;
 }
 
 .links img:hover {
-    filter: invert(14%) sepia(96%) saturate(1277%) hue-rotate(210deg) brightness(81%) contrast(104%);
+    filter: invert(22%) sepia(81%) saturate(2878%) hue-rotate(342deg) brightness(90%) contrast(93%);
     transition: ease-in 0.2s;
 }
 
