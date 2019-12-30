@@ -7,11 +7,14 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <div class="popup" id="contact">
-            <a href="mailto:rajatvarma08@gmail.com">contact</a>
+    <body onload="linksPosition()">
+        <div class="top">
+            <div class="popup" id="contact">
+                <a href="mailto:rajatvarma08@gmail.com">contact</a>
+            </div>
+            <div id="themeSwitcherButton" onclick="switchTheme()">Light</div>
         </div>
-        <div id="themeSwitcherButton" onclick="switchTheme()">Day</div>
+        
         <div class="landing">
             <div class="title" id="supermainheading">rajat varma</div>
         </div>
@@ -28,16 +31,34 @@
             <ul>
                 <li><div id='highlight'>Suncity School</div> (2008-2015)</li>
                 <li><div id='highlight'>Delhi Public School, Gurgaon</div> (2016-2021)</li>
+                <p>I'm currently in class 11, learning CS [Python+SQL] along with Maths, Physics and Chemistry (ew).</p>
+                <p>With absolutely no plans for my future, I'm just kinda vibin rn</p>
             </ul>
             <h4 class="about-heading-2">Other Education</h4>
             <ul>
                 <li><div id=highlight>5-Course Specialization on Python</div> by the University of Michigan</li>
                 <li><div id=highlight>Programming Fundamentals and Logic</div> by the Duke University</li>
             </ul>
-            <!--<h4 class=about-heading-2>Other Skills</h4>-->
+            <h4 class=about-heading-2>Other Skills</h4>
+            <ul>
+                <li>Music Production with <div id=highlight>FL Studio</div> and <div id=highlight>Ableton Live</div></li>
+                <li>Graphic Design using <div id=highlight>Photoshop</div> and <div id=highlight>Illustrator</div></li>
+                <li><div id=highlight>Python</div> and <div id=highlight>Django</div></li>
+                <li>3D Modelling and Environment Design using <div id=highlight>Blender</div></li>
+                <li>Being retarded using my <div id=highlight>bigbrain</div></li>
+            </ul>
+            <h4 class="about-heading">What I've Done</h4>
+            <ul>
+                <li>Absolutely nothing</li>
+                <li>I'm actually useless</li>
+                <li>A 3 month internship at Codon Software Ltd. (developing a dashboard app for retail owners)</li>
+                <li>Like I said, I'm useless</li>
+                <li>Be annoying</li>
+            </ul>
+            <h3>You can find me on any of the links given <div id=personalize></div></h3>
             <p>also visit my friends&nbsp;<a href="https://shubhro.in" target="top">shubhro gupta</a>&nbsp;and&nbsp;<a href="http://santrip.ga" target="top">santripta sharma</a></p >
         </div>
-        <script src="themeSwitcher.js"></script>
+        <script src="script.js"></script>
         
     </body>
     <!---<img src="imgs/fin.jpg">-->

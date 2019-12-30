@@ -2,15 +2,25 @@ function switchTheme() {
     var body = document.getElementsByTagName("body");
     var aboutArea = document.getElementsByClassName("about")
     var themeSwitchButton = document.getElementById("themeSwitcherButton");
-    if (themeSwitchButton.innerHTML == "Day") {
+    if (themeSwitchButton.innerHTML == "Light") {
         body[0].style.backgroundColor = "var(--dark-bg)";
         aboutArea[0].style.color = "var(--primary)";
-        themeSwitchButton.innerHTML = "Night";       
+        themeSwitchButton.innerHTML = "Dark";       
     }
 
-    else if (themeSwitchButton.innerHTML == "Night") {
+    else if (themeSwitchButton.innerHTML == "Dark") {
         body[0].style.backgroundColor = "var(--light-bg)";
         aboutArea[0].style.color = "var(--primary)";
-        themeSwitchButton.innerHTML = "Day";
+        themeSwitchButton.innerHTML = "Light";
+    }
+}
+
+function linksPosition(){
+    if (window.screen.width < 1000) {
+        document.getElementById("personalize").innerHTML = "above";
+    }
+
+    else {
+        document.getElementById("personalize").innerHTML = "beside";
     }
 }

@@ -99,6 +99,7 @@ pre {
 }
 
 .about {
+    position: absolute;
     transition: ease-in-out 0.2s;
     margin-top: 50px;
     color: var(--primary);
@@ -107,9 +108,17 @@ pre {
     font-size: 1.25em;
     margin-left: 20%;
     margin-right: 20%;
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
 
+}
+
+.about h3 {
+    text-align: justify;
+}
+
+.about p{
+    text-align: justify;
 }
 
 
@@ -140,12 +149,27 @@ pre {
     transition: ease-in 0.2s;
 }
 
+#personalize {
+    display: inline;
+}
+
 @media only screen and (max-width: 1000px) {
+    #contact a {
+        font-size: 1.1em;
+        right: 4%;
+    }
+
+    #themeSwitcherButton {
+        font-size: 1.1em;
+        left: 4%;
+    }
+
     .about {
         position: absolute;
         display: block;
-        margin-left: 4%;
-        margin-right: 4%;
+        margin-left: 3%;
+        left: 0;
+        margin-right: 3%;
         font-size: 1em;
     }
 
@@ -156,15 +180,14 @@ pre {
     .links {
         position: absolute;
         display: flex;
-        min-width: 75%;
+        width: 100%;
         left: 0;
-        right: 0;
-        margin-left: 25%;
+        justify-content: center;
     }
 
     .links img {
         display: inline-grid;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 }
