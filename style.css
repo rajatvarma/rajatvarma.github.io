@@ -21,17 +21,25 @@ body {
 }
 
 .landing {
+    position: relative;
+    top: 15%;
     display: flex;
-    min-height: 35%;
-    min-width: 40%;
-    max-width: 75%;
+    min-height: 30%;
+    width: 100%;
+    width: 100%;
 }
 
 *.landing {
     padding: 10px;
 }
 
-#contact a {
+.top {
+    position: absolute;
+    min-height: 15%;
+    width: 100%;
+}
+
+.top #contact a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: var(--tertiary);
@@ -44,7 +52,7 @@ body {
     
 }
 
-#themeSwitcherButton {
+.top #themeSwitcherButton {
     font-family: 'Poppins';
     color: white;
     font-weight: 700;
@@ -60,12 +68,9 @@ body {
     cursor: pointer;
 }
 
-#supermainheading {
-    position: absolute;
-    display: inline-block;
+.landing #supermainheading {
+
     text-align: center;
-    top: 20%;
-    left: 0;
     font-family: 'Playfair Display', sans-serif;
     color: var(--secondary);
     font-weight: 900;
@@ -173,7 +178,7 @@ pre {
         font-size: 1em;
     }
 
-    #supermainheading{
+    .landing #supermainheading{
         font-size: 3em;
     }
 
