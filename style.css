@@ -1,8 +1,8 @@
 :root {
+    --primary: #DC5F67;
     --secondary: #3772FF;
-    --primary: #DF2935;
     --tertiary: #CB9501;
-    --light-bg: #E6E8E6;
+    --light-bg: #dadada;
     --dark-bg: #080708;
 }
 
@@ -130,7 +130,7 @@ pre {
 .about #highlight{
     color: var(--tertiary);
     display: inline-grid;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .links {
@@ -159,6 +159,10 @@ pre {
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #contact a {
         font-size: 1.1em;
         right: 4%;
