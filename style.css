@@ -1,5 +1,5 @@
 :root {
-    --primary: #3AB9EF;
+    --primary: #00b3ff;
     --secondary: #1EAFED;
     --tertiary: #ea168e;
     --light-bg: #E3F5FD;
@@ -30,13 +30,15 @@ body {
 }
 
 *.landing {
-    padding: 10px;
 }
 
 .top {
     position: absolute;
     min-height: 15%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top #contact a {
@@ -48,6 +50,7 @@ body {
     position: absolute;
     font-size: 1.25em;
     top: 30px;
+    min-height: 100%;
     right: 20%;
     
 }
@@ -58,6 +61,7 @@ body {
     font-weight: 700;
     display: inline-grid;
     position: absolute;
+    transform: translateY(-20%);
     font-size: 1.25em;
     top: 30px;
     left: 20%;
@@ -164,6 +168,13 @@ pre {
 @media only screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
+    }
+
+    .top {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .about a:visited{
