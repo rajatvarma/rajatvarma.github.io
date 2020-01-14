@@ -147,14 +147,14 @@ pre {
     width: 30px;
     height: 30px;
     padding: 10px;
-    filter: invert(37%) sepia(96%) saturate(3257%) hue-rotate(215deg) brightness(104%) contrast(101%);
+    filter: invert(60%) sepia(91%) saturate(773%) hue-rotate(166deg) brightness(95%) contrast(96%);
     transition: ease-out 0.2s;
     display: flex;
 }
 
 .links img:hover {
-    filter: invert(22%) sepia(81%) saturate(2878%) hue-rotate(342deg) brightness(90%) contrast(93%);
     transition: ease-in 0.2s;
+    filter: invert(24%) sepia(97%) saturate(5513%) hue-rotate(314deg) brightness(94%) contrast(95%);
 }
 
 #personalize {
