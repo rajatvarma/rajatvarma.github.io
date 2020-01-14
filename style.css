@@ -1,8 +1,8 @@
 :root {
-    --primary: #DC5F67;
-    --secondary: #3772FF;
-    --tertiary: #CB9501;
-    --light-bg: #dadada;
+    --primary: #3AB9EF;
+    --secondary: #1EAFED;
+    --tertiary: #ea168e;
+    --light-bg: #E3F5FD;
     --dark-bg: #080708;
 }
 
@@ -62,8 +62,7 @@ body {
     top: 30px;
     left: 20%;
     background-color: var(--tertiary);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -126,6 +125,10 @@ pre {
     text-align: justify;
 }
 
+.about a:visited{
+    color: var(--tertiary);
+}
+
 
 .about #highlight{
     color: var(--tertiary);
@@ -162,6 +165,11 @@ pre {
     body {
         overflow-x: hidden;
     }
+
+    .about a:visited{
+        color: var(--tertiary);
+    }
+    
 
     #contact a {
         font-size: 1.1em;

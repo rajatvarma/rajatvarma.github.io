@@ -8,17 +8,15 @@ function switchTheme() {
     var aboutArea = document.getElementsByClassName("about")
     var themeSwitchButton = document.getElementById("themeSwitcherButton");
     if (isDark == true) {
-        root.style.setProperty('--primary', "#DF2935");
         body[0].style.backgroundColor = "var(--dark-bg)";
         aboutArea[0].style.color = "var(--primary)";
-        themeSwitchButton.innerHTML = "Dark";       
+        themeSwitchButton.innerHTML = "<img src='imgs/moon.svg'>";       
     }
 
     else if (isDark == false) {
-        root.style.setProperty('--primary', "#DC5F67");
         body[0].style.backgroundColor = "var(--light-bg)";
         aboutArea[0].style.color = "var(--primary)";
-        themeSwitchButton.innerHTML = "Light";
+        themeSwitchButton.innerHTML = "<img src='imgs/sun.svg'>";
     }
 }
 
