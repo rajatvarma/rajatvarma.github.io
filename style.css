@@ -2,12 +2,11 @@
     --primary: #00b3ff;
     --secondary: #1EAFED;
     --tertiary: #ea168e;
-    --light-bg: #E3F5FD;
+    --light-bg: #E0E5EC;
     --dark-bg: #080708;
 }
 
 body {
-    background-color: var(--light-bg);
     overflow-x: hidden;
     transition: ease-in-out 0.2s;
 }
@@ -57,6 +56,7 @@ body {
 }
 
 .top #themeSwitcherButton {
+    background-color: var(--tertiary);
     font-family: 'Poppins';
     color: white;
     font-weight: 700;
@@ -66,7 +66,6 @@ body {
     font-size: 1.25em;
     top: 30px;
     left: 20%;
-    background-color: var(--tertiary);
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
