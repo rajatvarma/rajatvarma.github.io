@@ -31,15 +31,15 @@ body {
 
 .landing {
     position: relative;
-    top: 15%;
+    top: 5%;
     display: flex;
     min-height: 30%;
     width: 100%;
 }
 
-.landing .picofme {
+.landing #picofme {
     margin-bottom: 100px;
-    left: 40%;
+    right: 20%;
     display: inline-block;
     overflow: hidden;
     width: 200px;
@@ -47,11 +47,11 @@ body {
     border-radius: 15px;
 }
 
-.landing .picofme img{
-    margin: -400px 550px 100px -400px;
+.landing #picofme img{
+    margin: -80px 25px 10px -180px;
 }
 
-.landing .picofme, .landing .title {
+.landing #picofme, .landing .title {
   position: absolute;
   
 }
@@ -87,9 +87,9 @@ body {
 }
 
 .landing #supermainheading {
-
-    text-align: center;
     font-family: 'Playfair Display', sans-serif;
+    left: 20%;
+    top: 25%;
     color: var(--secondary);
     font-weight: 900;
     font-size: 70px;
@@ -138,11 +138,11 @@ pre {
 }
 
 .about h3 {
-    text-align: justify;
+    text-align: left;
 }
 
 .about p{
-    text-align: justify;
+    text-align: left;
 }
 
 .about a:visited{
