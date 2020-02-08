@@ -197,9 +197,6 @@ pre {
 
     .top {
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        
     }
 
     .about a:visited{
@@ -226,8 +223,24 @@ pre {
         font-size: 1em;
     }
 
+    .landing {
+        left: 0;
+    }
+
+    .landing #picofme {
+        right: 3%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .landing #picofme img{
+        margin: -100px 25px 10px -200px;
+    }
+
     .landing #supermainheading{
         font-size: 3em;
+        left: 0;
+        margin-left: 3%;
     }
 
     .links {
