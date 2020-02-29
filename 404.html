@@ -9,38 +9,85 @@
     </head>
     <body>
         <style>
-            .about h3 {
+            body {
+                background-color: var(--dark-bg);
+            }
+
+            #fourzerofour {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 3.5rem;
+            }
+
+            #fourzerofour #four {
+                display: inline-grid;
+            }
+
+            #fourzerofour #four h1 {
+                padding: 10px;
+            }
+
+            #fourzerofour #zero {
+                display: inline-grid;
+                padding-top: 10px;
+            }
+
+            #zero h1 {
+                padding: 20px;
+            }
+
+            .content {
+                margin-top: 10%;
+                color: var(--light-bg);
+                font-family: "Poppins";
+            }
+
+            h3 {
+                text-align: center;
+                padding: 50px;
+            }
+
+            #supermainheading {
+                font-size: 4rem;
+                color: var(--primary);
+                font-family: "Playfair Display";
+                max-width: 100%;
+                justify-content: center;
                 text-align: center;
             }
 
-            #returnbutton {
-                position: absolute;
-                width: 100%;
+            .content #returnbutton {
+                margin: auto;
+                width: 50%;
+                text-align: center;
             }
 
-            #returnbutton a {
-                background-color: var(--primary);
+            .content #returnbutton a {
+                border: 2px solid;
+                text-transform  : uppercase;
+                border-color: var(--tertiary);
                 text-decoration: none;
-                color: white;
                 border-radius: 15px;
-                color: white;
+                color: var(--primary);
                 cursor: pointer;
                 text-align: center;
+                font-weight: 700;
                 padding: 15px;
-                max-width: 50%;
             }
 
         </style>
-        <div class="landing">
-            <h1 id="supermainheading">404</h1>
-        </div>
-        <div class="about">
+        <div class="content">
+            <div id="fourzerofour">
+                <div id="four"><h1 id="supermainheading">4</h1></div>
+                <div id="zero"><h1 id="supermainheading">0</h1></div>
+                <div id="four"><h1 id="supermainheading">4</h1></div>
+            </div>
             <h3>
-
-                Uh oh... How did you manage to get lost in a one page website?!
+                Uhhhh... How did you manage to get lost in a one page website?
             </h3>
             <div id="returnbutton">
-                <a href="index.html">Return home</a>
+                <a href="index.html">Go back</a>
             </div>
         </div>
     </body>

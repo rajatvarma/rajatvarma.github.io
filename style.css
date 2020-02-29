@@ -228,12 +228,14 @@ pre {
     }
 
     .landing #picofme {
+        display: none;
         right: 3%;
         width: 150px;
         height: 150px;
     }
 
     .landing #picofme img{
+        display: none;
         margin: -100px 25px 10px -200px;
     }
 
