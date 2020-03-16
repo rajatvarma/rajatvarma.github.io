@@ -145,6 +145,10 @@ pre {
     text-align: left;
 }
 
+.about #highlight a {
+    text-decoration: none;
+}
+
 .about a:visited{
     color: var(--tertiary);
 }

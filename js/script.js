@@ -1,4 +1,6 @@
 var isDark = false;
+var count = 0
+
 
 function switchTheme() {
     isDark = !isDark
@@ -33,5 +35,14 @@ function linksPosition(){
     }
 }
 
-switchTheme();
+function prank(){
+    count++;
+    if (count == 6){
+        document.getElementById("prankText").setAttribute("href", "modani.html");
+        document.getElementById("prankText").removeAttribute("onclick");
+        count == 0
+    }
+    console.log(count);
+}
+
 
