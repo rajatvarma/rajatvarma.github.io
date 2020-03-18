@@ -38,7 +38,7 @@ function linksPosition(){
 function prank(){
     count++;
     if (count == 6){
-        document.getElementById("prankText").setAttribute("href", "modani.html");
+        document.getElementById("prankText").setAttribute("href", "fatman.html");
         document.getElementById("prankText").removeAttribute("onclick");
         count == 0
     }
