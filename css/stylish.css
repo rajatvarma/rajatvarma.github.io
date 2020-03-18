@@ -119,7 +119,7 @@ color: #363030; }
 
 .subhead{font-size:1.4rem;font-weight:500;line-height:1.3;margin-bottom:5rem;margin-left:0;}
 
-.logocontainer{background-color:#f5f5f5;margin-top:6rem;padding:4rem 0; }
+.logocontainer{background-color:#f5f5f5;margin-top:2rem;padding:2rem 0; }
 
 .github{background:url(https://image.flaticon.com/icons/svg/2111/2111432.svg) no-repeat; width:40px; height:38px;background-size:38px 38px;margin-right:20px;float:left; text-decoration: none;}
 .linkedin{background:url(https://image.flaticon.com/icons/svg/2111/2111532.svg) no-repeat; width:38px; height:38px;background-size:38px 38px;margin-right:20px;float:left; text-decoration: none;}
@@ -161,7 +161,7 @@ font-weight:400;
 #subtitle {
 font-family: "Montserrat", "Poppins";
 font-size: 1.8rem;
-margin-bottom:16rem
+margin-bottom:3rem;
 }
 
 @media 
@@ -207,7 +207,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;}
   font-family: "Montserrat SemiBold", "Poppins";
   font-size: 1.6rem;
   margin-bottom: 20px;
-  color: black;
+  color: teal;
+  font-weight: bold;
 }
 
 p {
@@ -219,7 +220,7 @@ p {
   }
 
 @media (min-width: 550px) {
-h1 { font-size: 10rem; line-height: 1.2; margin-top:25rem;}
+h1 { font-size: 10rem; line-height: 1.2; margin-top:5rem;}
 h2 { font-size: 4rem; }
 h3 { font-size: 3.0rem; letter-spacing: -.1rem;}
 h4 { font-size: 3.0rem; }
@@ -230,191 +231,6 @@ h6 { font-size: 1.5rem; }
 p {font-size: 1.75rem}
 }
 
-
-#communication{
-margin-top: 0;
-font-family: "Montserrat", "Poppins";
-font-size: 15;
-}
-
-a {
-color: #000; 
-border-bottom:1px solid #000;
-text-decoration:none;}
-a:hover {
-color:#000;
-border-bottom:1px solid #efdcd9; 
-transition:.5s;}
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-display: inline-block;
-height: 50px;
-width:18rem;
-padding: 0 0 0 5.1rem;
-color: #000;
-text-align: left;
-font-size: 1.15rem;
-font-weight: 600;
-line-height: 50px;
-letter-spacing: .1rem;
-text-transform: uppercase;
-text-decoration: none;
-white-space: nowrap;
-background-color: #f6e8e5;
-background-image:url(../images/pdf2x.png);
-background-repeat: no-repeat;
-background-position:right;
-background-size:62px 17px ;
-border-radius: 0;
-border: 1px solid #000;
-cursor: pointer;
-box-sizing: border-box; 
-margin-top:1rem;
-margin-bottom:5rem;}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-background-color:#efdcd9;
-outline: 0;
-border:1px solid #efdcd9;
-transition: .3s;
-}
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-color: #FFF;
-background-color: #33C3F0;
-border-color: #33C3F0; }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-color: #FFF;
-background-color: #1EAEDB;
-border-color: #1EAEDB; }
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-height: 38px;
-padding: 6px 10px; 
-background-color: #fff;
-border: 1px solid #D1D1D1;
-border-radius: 4px;
-box-shadow: none;
-box-sizing: border-box; }
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
--webkit-appearance: none;
-   -moz-appearance: none;
-        appearance: none; }
-textarea {
-min-height: 65px;
-padding-top: 6px;
-padding-bottom: 6px; }
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-border: 1px solid #33C3F0;
-outline: 0; }
-label,
-legend {
-display: block;
-margin-bottom: .5rem;
-font-weight: 600; }
-fieldset {
-padding: 0;
-border-width: 0; }
-input[type="checkbox"],
-input[type="radio"] {
-display: inline; }
-label > .label-body {
-display: inline-block;
-margin-left: .5rem;
-font-weight: normal; }
-
-
-code {
-padding: .2rem .5rem;
-margin: 0 .2rem;
-font-size: 90%;
-white-space: nowrap;
-background: #F1F1F1;
-border: 1px solid #E1E1E1;
-border-radius: 4px; }
-pre > code {
-display: block;
-padding: 1rem 1.5rem;
-white-space: pre; }
-
-
-button,
-.button {
-margin-bottom: 1rem; }
-input,
-textarea,
-select,
-fieldset {
-margin-bottom: 1.5rem; }
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ol,
-form {
-margin-bottom: 2.5rem; }
-
-.u-full-width {
-width: 100%;
-box-sizing: border-box; }
-.u-max-full-width {
-max-width: 100%;
-box-sizing: border-box; }
-.u-pull-right {
-float: right; }
-.u-pull-left {
-float: left; }
 
 hr {
 margin-top: 4rem;
@@ -442,13 +258,13 @@ display: table;
 clear: both; }
 
 span{
-  color:black;
-  font-family: "Montserrat SemiBold";
+  color:salmon;
+  font-family: "Sen";
 }
 
 #st
 {
   text-decoration: line-through;
-  color:black;
-  font-family: "Montserrat";
+  color:salmon;
+  font-family: "Sen";
 }
