@@ -3,12 +3,13 @@
     --secondary: #1EAFED;
     --tertiary: #ea168e;
     --light-bg: #E0E5EC;
-    --dark-bg: #080708;
+    --dark-bg: #914d91;
 }
 
 body {
     overflow-x: hidden;
     transition: ease-in-out 0.2s;
+    background-color: var(--light-bg);
 }
 
 *body {
@@ -32,61 +33,27 @@ body {
 .landing {
     position: relative;
     top: 5%;
-    display: flex;
     min-height: 30%;
     width: 100%;
 }
 
-.landing #picofme {
-    margin-bottom: 100px;
-    right: 20%;
-    display: inline-block;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-}
 
-.landing #picofme img{
-    margin: -80px 25px 10px -180px;
+.landing a {
+    font-family: "Poppins";
+    margin-left: 20%;
+    margin-top: 20%;
+    border: 1px solid var(--tertiary);
+    border-radius: 15px;
+    font-weight: 700;
+    color: var(--tertiary);
+    padding: 10px;
 }
 
 .landing #picofme, .landing .title {
-  position: absolute;
-  
+  position: absolute; 
 }
 
-.top #contact a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: var(--tertiary);
-    font-weight: 700;
-    display: inline-grid;
-    position: absolute;
-    font-size: 1.25em;
-    top: 30px;
-    min-height: 100%;
-    right: 20%;
-    
-}
-
-.top #themeSwitcherButton {
-    background-color: var(--tertiary);
-    font-family: 'Poppins';
-    color: white;
-    font-weight: 700;
-    display: inline-grid;
-    position: absolute;
-    transform: translateY(-20%);
-    font-size: 1.25em;
-    top: 30px;
-    left: 20%;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.landing #supermainheading {
+#supermainheading {
     font-family: 'Playfair Display', sans-serif;
     left: 20%;
     top: 25%;
@@ -194,6 +161,40 @@ pre {
     display: inline;
 }
 
+.type-container{
+    text-align: center;
+    color: var(--primary);
+    font-family: "Merriweather";
+    padding: 1% 5%;
+    border: 4px solid var(--secondary);
+    border-radius: 15px;
+    margin: 10% 20%;
+}
+
+.type-container h1, h2{
+    font-family: "Poppins";
+    display: inline-block;
+}
+
+
+.type-container .card-wrapper {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.type-container .card-wrapper img {
+    width: 300px;
+    height: 300px;
+    margin: 2%;
+}
+.type-container .card-wrapper p {
+    margin: 0 25%;
+
+}
+
 @media only screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
@@ -261,5 +262,33 @@ pre {
         display: inline-grid;
         width: 20px;
         height: 20px;
+    }
+
+    .type-container{
+        text-align: center;
+        color: var(--primary);
+        font-family: "Merriweather";
+        padding: 1% 10%;
+        border: 4px solid var(--secondary);
+        border-radius: 15px;
+        margin: 2%;
+    }
+
+    .type-container .card-wrapper p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .type-container .card-wrapper img {
+        width: 150px;
+        height: 150px;
+        margin: 2%;
+    }
+
+    .landing a {
+        font-size: 0.75rem;
+        margin-left: 2%;
+        margin-top: 35%;
+        display: inline-block;
     }
 }
