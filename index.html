@@ -9,100 +9,63 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body onload="linksPosition()" onresize="linksPosition()">
+        <!--<div class="top">
+            <div id="contact">
+                <a href="mailto:rajatvarma08@gmail.com">contact</a>
+            </div>
+            <div id="themeSwitcherButton" onclick="switchTheme();">
+                <img src="imgs/moon.svg">
+            </div>
+        </div>-->
         <div class="landing">
             <div class="title" id="supermainheading">
                 rajat varma
             </div>
+            <!--<div id="picofme">
+                <img src="imgs/me.jpg">
+            </div>-->
         </div>
         <div class="links">
-            <!--<a href="https://www.instagram.com/_rajatvarma" target="top"><img src="imgs/social-219-96734.png"></img></a>
+            <a href="https://www.instagram.com/_rajatvarma" target="top"><img src="imgs/social-219-96734.png"></img></a>
+            <a href="https://www.soundcloud.com/ekademusic" target="top"><img src="imgs/social-200-96715.png"></object></a>
             <a href="https://www.twitter.com/ekade420" target="top"><img src="imgs/social-188-96703.png"></object></a>
-            <a href="mailto:rajatvarma08@gmail.com"><img src="imgs/icons8-new-post-96.png" style="filter: brightness(1000%);"></a>-->
+            <!--<a href="https://open.spotify.com/user/rajatvarma?si=hS7JcTovR2eRUEeOrzAM1Q" target="top"><img src="imgs/social-197-96712.png"></object></a>-->
+            <a href="https://www.github.com/rajatvarma" target="top"><img src="imgs/social-225-96740.png"></a>
+            <a href="https://www.behance.net/rajatvarma" target="top"><img src="imgs/social-244-96759.png"></a>
+            <a href="mailto:rajatvarma08@gmail.com"><img src="imgs/icons8-new-post-96.png" style="filter: brightness(1000%);"></a>
         </div>
-        <div class="nav">
-            <div class="nav_container">
-                <a onclick="contentChange(0)">About Me</a>
-                <a onclick="contentChange(1)">Programming</a>
-                <a onclick="contentChange(2)">Graphics</a>
-                <a onclick="contentChange(3)">Music</a>
-                <a onclick="contentChange(4)">Music</a>
-            </div>
-        </div>
+
         <div class="about">
-            <div id="general">
-                <p>
-                Hey! I'm Rajat, a high school senior, expected to graduate in 2021. I am studying PCME, along with Computer Science.
-                I aim on pursuing Computer Science and Graphic Design in college and for a career.<br><br>
-                My hobbies include cooking, playing the piano and sketching.<br></p>
-
-            </div>
-
-            <div id="programming">
-                <h2>Programming</h2>
-                <p>Over the past few years, I have gained various skills in programming</p>
-
-                <h4>Languages + Proficiency</h4>
-                <ul>
-                    <li><div id="highlight">Python</div>: Advanced</li>
-                    <li><div id="highlight">JavaScript</div>: Intermediate</li>
-                    <li><div id="highlight">Scratch</div>: I put this on here because I'm desperate</li>
-                </ul>
-                <h4>Courses completed</h4>
-                <ul>
-                    <li><div id="highlight">5-Course Specialization on Python</div> by the University of Michigan</li>
-                    <li><div id="highlight">Programming Fundamentals and Logic</div> by the Duke University</li>
-                </ul>
-                <h4>Projects</h4>
-                <ul>
-                    <li>Developed a <div id ="highlight">full stack Django dashboard</div> for retail owners under <div id="highlight">Codon Softwares Ltd.</div></li>
-                </ul>
-
-                Please check out my <div id=highlighted><a href="https://www.github.com/rajatvarma" target="top">github</a></div>
-            </div>
-
-            <div id="graphics">
-                <h2>Graphics</h2>
-                <p>In my free time I love to sketch and design stuff, having learnt most of what I know from YouTube.</p>
-                <h4>Softwares</h4>
-                <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Blender</li>
-                    <li>Krita</li>
-                </ul>
-
-                <h4>Skills</h4>
-                <ul>
-                    <li>Character Drawing</li>
-                    <li>Web Design</li>
-                    <li>App Design</li>
-                    <li>Animation</li>
-                    <li>3D Modelling and Environment Design</li>
-                </ul>
-
-                <p>You can find some of my work here at my <div id="highlight"><a href="https://www.behance.net/rajatvarma" target="top">behance</a></div>
-
-            <div id="music">
-                <h2>Music</h2>
-                <p>I really love listening to, playing, and making music. I currently have a <div id="highlight">Grade 5 certification</div> from <div id="highlight">Trinity College London</div>.</p>
-
-                <h4>Softwares</h4>
-                <ul>
-                    <li>FL Studio</li>
-                    <li>Ableton Live</li>
-                    <li>Logic Pro</li>
-                </ul>
-
-                <h4>Instruments</h4>
-                <ul>
-                    <li>Piano</li>
-                </ul>
-
-                <h4>Some of my works</h4>
-                <iframe width="45%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438776628&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                <iframe width="45%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422414874&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-            </div>
+            <h3 class="about-heading-1">Hey there! Thank you for visiting my site. Here's a little info about me</h3>
+            <h4 class="about-heading-2">Formal Education</h4>
+            <ul>
+                <li><div id='highlight'>Suncity School</div> (2008-2015)</li>
+                <li><div id='highlight'>Delhi Public School, Gurgaon</div> (2016-2021)</li>
+                <p>I'm somehow in class 12, learning CS [Python+SQL] along with Maths, Physics and Chemistry (ew).</p>
+            </ul>
+            <h4 class="about-heading-2">Other Education</h4>
+            <ul>
+                <li><div id=highlight>5-Course Specialization on Python</div> by the University of Michigan</li>
+                <li><div id=highlight>Programming Fundamentals and Logic</div> by the Duke University</li>
+            </ul>
+            <h4 class=about-heading-2>Other Skills</h4>
+            <ul>
+                <li>Music Production with <div id=highlight>FL Studio</div> and <div id=highlight>Ableton Live</div></li>
+                <li>Graphic Design using <div id=highlight>Photoshop</div> and <div id=highlight>Illustrator</div></li>
+                <li><div id=highlight>Python</div> and <div id=highlight>Django</div></li>
+                <li>3D Modelling and Environment Design using <div id=highlight>Blender</div></li>
+                <li>Being retarded using my <div id=highlight><a id="prankText" onclick="prank()">bigbrain</a></div></li>
+            </ul>
+            <h4 class="about-heading">What I've Done</h4>
+            <ul>
+                <li>Absolutely nothing</li>
+                <li>Independent design stuff</li>
+                <li>A 3 month internship at Codon Software Ltd. (developing a dashboard app for retail owners)</li>
+            </ul>
+            <h4>No, you won't find me in the Mac Lab or any other lab, because I have a life. (jk i'm just crying in my class.)</h4>
+            <h3>You can find me on any of the links given <div id=personalize></div></h3>
+            <p>Also visit my friends&nbsp;<a href="https://shubhro.in" target="top">Shubhro Gupta</a>&nbsp;and&nbsp;<a href="http://santrip.ga" target="top">Santripta Sharma</a></p >
         </div>
         <script src="js/script.js"></script>
         <script>
