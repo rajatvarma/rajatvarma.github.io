@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     transition: ease-in-out 0.2s;
+    background-color: var(--dark-bg);
 }
 
 *body {
@@ -20,15 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-.top {
-    position: absolute;
-    min-height: 15%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .landing {
     position: relative;
     top: 5%;
@@ -37,52 +29,29 @@ body {
     width: 100%;
 }
 
-.landing #picofme {
-    margin-bottom: 100px;
-    right: 20%;
-    display: inline-block;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
+.landing #supermainheading{
+    text-align: center;
 }
 
-.landing #picofme img{
-    margin: -80px 25px 10px -180px;
+.nav{
+    top: 5%;
+    width: 50%;
+    margin: auto
 }
 
-.landing #picofme, .landing .title {
-  position: absolute;
-  
+.nav .nav_container{
+    width: 70%;
+    margin: auto;
 }
 
-.top #contact a {
+.nav p, .nav a { 
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: var(--tertiary);
-    font-weight: 700;
-    display: inline-grid;
-    position: absolute;
-    font-size: 1.25em;
-    top: 30px;
-    min-height: 100%;
-    right: 20%;
-    
-}
-
-.top #themeSwitcherButton {
     background-color: var(--tertiary);
-    font-family: 'Poppins';
     color: white;
-    font-weight: 700;
-    display: inline-grid;
-    position: absolute;
-    transform: translateY(-20%);
-    font-size: 1.25em;
-    top: 30px;
-    left: 20%;
-    padding: 10px;
-    border-radius: 5px;
+    font-family: "Poppins";
+    padding: 3%;
+    border-radius: 10px;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -98,34 +67,10 @@ body {
     margin-bottom: auto;
 }
 
-#introdesc {
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    top: 35%;
-    padding-top: 25px;
-    font-family: "Playfair Display";
-    color: var(--tertiary);
-    font-size: 20px;
-    min-width: 75%;
-}
-
-.title {
-    font-family: 'Poppins';
-    font-weight: 600;
-    color: var(--primary);
-}
-
-pre {
-    font-family: 'Merriweather';
-    font-weight: 300;
-    color: var(--primary);
-}
 
 .about {
-    position: absolute;
+    position: relative;
     transition: ease-in-out 0.2s;
-    margin-top: 50px;
     color: var(--primary);
     display: inline-block;
     font-family: 'Poppins';
@@ -147,10 +92,6 @@ pre {
 
 .about #highlight a {
     text-decoration: none;
-}
-
-.about a:visited{
-    color: var(--tertiary);
 }
 
 
@@ -194,6 +135,18 @@ pre {
     display: inline;
 }
 
+#programming {
+    display: none;
+}
+
+#graphics{
+    display: none;
+}
+
+#music{
+    display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
@@ -219,10 +172,11 @@ pre {
     }
 
     .about {
-        position: absolute;
+        position: relative;
         display: block;
         margin-left: 3%;
         left: 0;
+        margin-top: 100px;
         margin-right: 3%;
         font-size: 1em;
     }
@@ -231,22 +185,11 @@ pre {
         left: 0;
     }
 
-    .landing #picofme {
-        display: none;
-        right: 3%;
-        width: 150px;
-        height: 150px;
-    }
-
-    .landing #picofme img{
-        display: none;
-        margin: -100px 25px 10px -200px;
-    }
-
     .landing #supermainheading{
+        top: 2%;
         font-size: 3em;
         left: 0;
-        margin-left: 3%;
+        text-align: center;
     }
 
     .links {
