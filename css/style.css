@@ -129,7 +129,6 @@ pre {
 }
 
 .links {
-    height: 100%;
     top: 25%;
     position: fixed;
     right: 5%;
@@ -204,6 +203,7 @@ pre {
         position: relative;
         display: block;
         margin: 0;
+        padding: 10px;
         left: 0;
         font-size: 0.75em;
     }
@@ -232,15 +232,15 @@ pre {
     }
 
     .links {
-        position: relative;
-        width: 100%;
         left: 0;
         text-align: center;
+        position: relative;
+        top: 0;
     }
 
     .links a {
+        display: inline-block;
         text-align: center;
-        display: inline-grid;
         width: 20px;
         height: 20px;
     }
