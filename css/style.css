@@ -241,13 +241,15 @@ pre {
     .links a {
         display: inline-block;
         text-align: center;
-        width: 20px;
-        height: 20px;
+        margin: 5px;
+        padding: 7px;
+        width: 15px;
+        height: 15px;
     }
 
     .links a img {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
     }
 
     .type-container{
