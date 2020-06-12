@@ -108,7 +108,9 @@ pre {
 }
 
 .about p{
+    margin: 0;
     text-align: left;
+    display: inline;
 }
 
 .about #highlight a {
