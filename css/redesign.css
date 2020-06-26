@@ -13,6 +13,11 @@
     src: url("fonts/Kayak Sans Regular.otf")
 }
 
+@font-face {
+    font-family: "Aemstel";
+    src: url("fonts/Aemstel-Regular.otf");
+}
+
 html {
     overflow-x: hidden;
 }
@@ -131,7 +136,7 @@ h2 {
 }
 
 .work-link {
-    stroke: white;'
+    stroke: white;
     cursor: pointer;
 }
 
