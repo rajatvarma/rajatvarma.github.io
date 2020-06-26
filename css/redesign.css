@@ -39,12 +39,25 @@ section {
     position: absolute;
     right: 5vw;
     top: 5vh;
+    transition: 0.2s;
+}
+
+.social-link {
+ stroke: var(--primary);
+ width: 30px;
+ height: 30px;
+ margin: 5px 0;
 }
 
 .checks-bottom {
     position: absolute;
     right: 5vw;
     top: 85vh;
+    transition: 0.2s;
+}
+
+.checks-bottom:hover {
+    transform: rotate(90deg);
 }
 
 .heading-wrapper{
@@ -107,15 +120,17 @@ h2 {
 }
 
 .card-container {
-    margin: 0 10vw;
-    width: 80vw;
+    margin: 0 5vw;
+    width: 90vw;
+    text-align: center;
 }
 
 .card-container .card {
-    display: inline-block;
+    display: inline-grid;
     border: 1px solid var(--primary);
     margin: 25px;
-    width: 30%;
+    width: 20vw;
+    height: 50vh;
     padding: 25px;
 }
 
@@ -138,6 +153,8 @@ h2 {
 .work-link {
     stroke: white;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .work-link:hover {
@@ -200,6 +217,8 @@ h2 {
         text-align: center;
         width: 80vw;
         margin: 10px 0;
+        height: inherit;
+        padding: 5px;
     }
 
     .card p {
