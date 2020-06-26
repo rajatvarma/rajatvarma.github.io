@@ -46,7 +46,7 @@ section {
  stroke: var(--primary);
  width: 30px;
  height: 30px;
- margin: 5px 0;
+ margin: 10px 0;
 }
 
 .checks-bottom {
@@ -223,5 +223,10 @@ h2 {
 
     .card p {
         text-align: center;
+    }
+
+    .social-link {
+        width: 20px;
+        height: 20px;
     }
 }
