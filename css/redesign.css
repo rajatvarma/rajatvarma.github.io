@@ -3,6 +3,8 @@
     --primary: #9eff00;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
 @font-face {
     font-family: "STRRETCH SANS FREE";
     src: url("fonts/STRRETCHSANSFREE.ttf");
@@ -32,7 +34,7 @@ body {
 section {
     position: relative;
     min-height: 100vh;
-    padding: 0 20px;
+    padding: 0 5vw;
 }
 
 .checks-top {
@@ -43,10 +45,18 @@ section {
 }
 
 .social-link {
- stroke: var(--primary);
- width: 30px;
- height: 30px;
- margin: 10px 0;
+    stroke: var(--primary);
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.social-link:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.1s;
+    stroke: aliceblue;
 }
 
 .checks-bottom {
@@ -95,9 +105,9 @@ section {
 
 .about-content {
     color: white;
-    font-family: "Kayak Sans";
+    font-family: "Poppins";
     margin-left: 5vw;
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 30px;
 }
 
@@ -120,7 +130,6 @@ h2 {
 }
 
 .card-container {
-    margin: 0 5vw;
     width: 90vw;
     text-align: center;
 }
@@ -130,7 +139,7 @@ h2 {
     border: 1px solid var(--primary);
     margin: 25px;
     width: 20vw;
-    height: 50vh;
+    height: 60vh;
     padding: 25px;
 }
 
@@ -145,7 +154,7 @@ h2 {
 
 .card p {
     color: white;
-    font-family: "Kayak Sans";
+    font-family: "Poppins";
     text-align: right;
 
 }
@@ -197,8 +206,10 @@ h2 {
     }
     
     section {
-        padding: 2vw;
+        padding: 5vw;
     }
+
+    
 
     .about-content {
         position: relative;
@@ -210,7 +221,6 @@ h2 {
         position: relative;
         text-align: center;
         margin: 0;
-        width: 96vw;
     }
 
     .card-container .card {
@@ -228,5 +238,10 @@ h2 {
     .social-link {
         width: 20px;
         height: 20px;
+    }
+
+    .social-link:hover {
+        width: 25px;
+        height: 25px;
     }
 }
