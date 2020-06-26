@@ -1,0 +1,69 @@
+:root {
+    --bg: #000;
+    --primary: #9eff00;
+}
+
+body {
+    background-color: var(--bg);
+    margin: 0;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}
+
+.checks {
+    position: absolute;
+    left: 90vw;
+    top: 5vh;
+}
+
+.heading-wrapper{
+    position: absolute;
+    height: 50vh;
+    top: 40vh;
+    left: 5vw;
+    font-family: "STRRETCH SANS FREE";
+    font-size: 1.75rem;
+}
+
+.stroke-head {
+    color: var(--bg);
+    -webkit-text-stroke: 0.25px var(--primary);
+    -webkit-text-fill-color: var(-bg);
+    margin-top: -35px;
+    margin-bottom: 0;
+}
+
+.fill-head {
+    color: var(--primary);
+    margin-top: -35px;
+}
+
+.landing-bottom {
+    position: absolute;
+    top: 70vh;
+    left: 5vw;
+}
+
+h3 {
+    font-family: "STRRETCH SANS FREE";
+    color: var(--primary);
+}
+
+@media(max-width: 1000px) {
+
+    .checks svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .heading-wrapper {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
