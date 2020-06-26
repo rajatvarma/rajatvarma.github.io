@@ -3,6 +3,11 @@
     --primary: #9eff00;
 }
 
+@font-face {
+    font-family: "STRRETCH SANS FREE";
+    src: url("fonts/STRRETCHSANSFREE.ttf");
+    }
+
 body {
     background-color: var(--bg);
     margin: 0;
