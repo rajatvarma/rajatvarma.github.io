@@ -8,20 +8,38 @@
     src: url("fonts/STRRETCHSANSFREE.ttf");
     }
 
+@font-face {
+    font-family: "Kayak Sans";
+    src: url("fonts/Kayak Sans Regular.otf")
+}
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--bg);
     margin: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 section {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 0 20px;
 }
 
-.checks {
+.checks-top {
     position: absolute;
-    left: 90vw;
+    right: 5vw;
     top: 5vh;
+}
+
+.checks-bottom {
+    position: absolute;
+    right: 5vw;
+    top: 85vh;
 }
 
 .heading-wrapper{
@@ -52,23 +70,134 @@ section {
     left: 5vw;
 }
 
-h3 {
+.scroll-text {
     font-family: "STRRETCH SANS FREE";
     color: var(--primary);
 }
 
+.about-content {
+    color: white;
+    font-family: "Kayak Sans";
+    margin-left: 5vw;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-family: "Aemstel";
+    color: var(--primary);
+}
+
+.text-highlight { 
+    color: var(--primary);
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.text-highlight:hover {
+    background-color: var(--primary);
+    font-weight: bold;
+    color: var(--bg);
+}
+
+.card-container {
+    margin: 0 10vw;
+    width: 80vw;
+}
+
+.card-container .card {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    margin: 25px;
+    width: 30%;
+    padding: 25px;
+}
+
+.card-links {
+    text-align: center;
+}
+
+.card h4 {
+    color: var(--primary);
+    font-family: "STRRETCH SANS FREE";
+}
+
+.card p {
+    color: white;
+    font-family: "Kayak Sans";
+    text-align: right;
+
+}
+
+.work-link {
+    stroke: white;'
+    cursor: pointer;
+}
+
+.work-link:hover {
+    stroke: var(--primary);
+}
+
 @media(max-width: 1000px) {
 
-    .checks svg {
+    svg {
         width: 25px;
         height: 25px;
     }
 
+    .checks-top {
+        right: 5vw;
+    }
+
+    .checks-bottom {
+        right: 8vw;
+        top: 85vh;
+    }
+
     .heading-wrapper {
+        top: 50vh;
         font-size: 1.3rem;
     }
 
-    h3 {
+    .landing-bottom {
+        top: 80vh;
+    }
+
+    .scroll-text {
         font-size: 1rem;
+    }
+
+    h2 {
+        position: relative;
+        margin: 0;
+        left: 0;
+    }
+    
+    section {
+        padding: 2vw;
+    }
+
+    .about-content {
+        position: relative;
+        font-size: 1rem;
+        line-height: inherit;
+    }
+
+    .card-container {
+        position: relative;
+        text-align: center;
+        margin: 0;
+        width: 96vw;
+    }
+
+    .card-container .card {
+        text-align: center;
+        width: 80vw;
+        margin: 10px 0;
+    }
+
+    .card p {
+        text-align: center;
     }
 }
