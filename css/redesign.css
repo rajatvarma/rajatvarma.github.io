@@ -139,8 +139,8 @@ h2 {
     border: 1px solid var(--primary);
     margin: 25px;
     width: 20vw;
-    height: 60vh;
     padding: 25px;
+    transition: 0.2s;
 }
 
 .card-links {
@@ -159,15 +159,24 @@ h2 {
 
 }
 
+.card:hover {
+    transform: translateY(5px);
+    border-width: 2px;
+    transition: 0.5s;
+}
+
 .work-link {
     stroke: white;
     cursor: pointer;
     width: 30px;
     height: 30px;
+    transition: 0.2s;
 }
 
 .work-link:hover {
     stroke: var(--primary);
+    width: 35px;
+    height: 35px;
 }
 
 @media(max-width: 1000px) {
