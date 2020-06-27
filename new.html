@@ -33,10 +33,12 @@
                 <h1 class="fill-head">rajat varma</h1>
             </div>
             <div class="landing-bottom">
-                <svg width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 12.8333V71.1667" stroke="#9EFF00" stroke-width="7" stroke-linecap="square"/>
-                    <path d="M79.1667 50L50 79.1667L20.8334 50" stroke="#9EFF00" stroke-width="7" stroke-linecap="square"/>
-                </svg>
+                <a href="#content">
+                    <svg width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 12.8333V71.1667" stroke="#9EFF00" stroke-width="7" stroke-linecap="square"/>
+                        <path d="M79.1667 50L50 79.1667L20.8334 50" stroke="#9EFF00" stroke-width="7" stroke-linecap="square"/>
+                    </svg>    
+                </a>
                 <h3 class="scroll-text">
                     find out more <br>about me.
                 </h3>
@@ -52,7 +54,7 @@
                 </svg>       
             </div>
         </section>
-        <section>
+        <section id="content">
             <h2>About me</h2>
             <p class="about-content">
                 Hey, I'm Rajat, a high school senior currently in Grade 12 at Delhi Public School, Gurgaon, <br>
@@ -112,7 +114,24 @@
                         </a>
                     </div>
                 </div>
-            </div>-->
+            </div>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>    
+            var links = document.getElementsByTagName("a");
+            Array.prototype.forEach.call(links, function(elem, index) {
+                var elemAttr = elem.getAttribute("href");
+                if(elemAttr && elemAttr.includes("#")) {
+                    elem.addEventListener("click", function(ev) {
+                        ev.preventDefault();
+                        document.getElementById(elemAttr.replace(/#/g, "")).scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                            inline: "nearest"
+                        });
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
