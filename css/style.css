@@ -1,302 +1,258 @@
 :root {
-    --primary: #EEEEEE;
-    --secondary: #EFEFEF;
-    --tertiary: #ea168e;
-    --light-bg: #555555;
-    --dark-bg: #111111;
+    --bg: #000;
+    --primary: #9eff00;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@font-face {
+    font-family: "STRRETCH SANS FREE";
+    src: url("fonts/STRRETCHSANSFREE.ttf");
+    }
+
+@font-face {
+    font-family: "Kayak Sans";
+    src: url("fonts/Kayak Sans Regular.otf")
+}
+
+@font-face {
+    font-family: "Aemstel";
+    src: url("fonts/Aemstel-Regular.otf");
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
-    position: absolute;
+    background-color: var(--bg);
+    margin: 0;
     overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    transition: ease-in-out 0.2s;
-    background-color: var(--dark-bg);
-    margin: 0;
+    max-width: 100vw;
 }
 
-.top {
+section {
+    position: relative;
+    min-height: 100vh;
+    padding: 0 5vw;
+}
+
+.checks-top {
     position: absolute;
-    min-height: 15%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 5vw;
+    top: 5vh;
+    transition: 0.2s;
 }
 
-.landing {
-    vertical-align: middle;
-    text-align: center;
-    width: 100%;
-}
-
-.landing #picofme {
-    text-align: center;
-    display: inline-block;  
-}
-
-.landing #picofme img {
-    border-radius: 20px;
-    width: 200px;
-    display: inline-block;
-    height: 200px;
-}
-
-.landing #supermainheading {
-    padding: 10px;
-}
-
-.landing #supermainheading h1{
-    font-family: 'Playfair Display', sans-serif;
-    color: var(--secondary);
-    font-weight: 900;
-    font-size: 60px;
-    margin: 0;
-}
-
-#introdesc {
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    top: 35%;
-    padding-top: 25px;
-    font-family: "Playfair Display";
-    color: var(--tertiary);
-    font-size: 20px;
-    min-width: 75%;
-}
-
-.title {
-    text-align: center;
-    font-family: 'Poppins';
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.home-button {
-    text-align: left !important;
-    display: inline;
-    position: fixed;
-    top: 5%;
-    left: 5%;
-}
-
-.home-button a img {
-    height: 30px;
+.social-link {
+    stroke: var(--primary);
     width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    transition: 0.5s;
 }
 
-pre {
-    font-family: 'Merriweather';
-    font-weight: 300;
-    color: var(--primary);
+.social-link:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.1s;
+    stroke: aliceblue;
 }
 
-.about {
+.checks-bottom {
     position: absolute;
-    transition: ease-in-out 0.2s;
-    margin-top: 50px;
+    right: 5vw;
+    top: 85vh;
+    transition: 0.2s;
+}
+
+.checks-bottom:hover {
+    transform: rotate(90deg);
+}
+
+.heading-wrapper{
+    position: absolute;
+    height: 50vh;
+    top: 40vh;
+    z-index: 0;
+    left: 5vw;
+    font-size: 1.75rem;
+}
+
+.stroke-head {
+    color: var(--bg);
+    -webkit-text-stroke: 0.25px var(--primary);
+    -webkit-text-fill-color: var(-bg);
+    margin-top: -35px;
+    font-family: "STRRETCH SANS FREE";
+    margin-bottom: 0;
+}
+
+.fill-head {
     color: var(--primary);
-    display: inline-block;
-    font-family: 'Poppins';
-    font-size: 1.25em;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: left;
-    font-weight: 400;
-
+    font-family: "STRRETCH SANS FREE";
+    margin-top: -35px;
 }
 
-.about h3 {
-    text-align: left;
+.landing-bottom {
+    position: absolute;
+    top: 70vh;
+    left: 5vw;
 }
 
-.about p{
-    margin: 0;
-    text-align: left;
-    display: inline;
-}
-
-.about #highlight a {
-    text-decoration: none;
-}
-
-.about a:visited{
-    color: var(--tertiary);
-}
-
-
-.about #highlight{
-    color: var(--tertiary);
-    display: inline-grid;
-    font-weight: 500;
-}
-
-.links {
-    top: 25%;
-    position: fixed;
-    right: 5%;
-    vertical-align: middle;
-}
-
-.links a img {
-    height: 25px;
-    filter: brightness(1000%);
-    width: 25px;
-}
-
-.links a {
-    padding: 10px;
-    margin: 10px;
-    transition: ease-out 0.2s;
-    display: flex;
-    background-color: var(--tertiary);
-    border-radius: 10px;
-}
-.links a:hover {
-    transition: ease-in 0.2s;
-    filter: none;
-    background-color: var(--light-bg);
-    
-}
-
-#personalize {
-    display: inline;
-}
-
-.type-container{
-    text-align: center;
+.scroll-text {
+    font-family: "STRRETCH SANS FREE";
     color: var(--primary);
-    font-family: "Merriweather";
-    padding: 1% 2%;
-    border: 4px solid var(--primary);
-    border-radius: 15px;
-    margin: 10% 20%;
 }
 
-.type-container h1, h2{
+.about-content {
+    color: white;
     font-family: "Poppins";
-    display: inline-block;
+    margin-left: 5vw;
+    font-size: 1rem;
+    line-height: 30px;
 }
 
-
-.type-container .card-wrapper {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid var(--secondary);
-    border-radius: 15px;
-    display: inline-block;
+h2 {
+    font-size: 1.7rem;
+    font-family: "Aemstel";
+    color: var(--primary);
 }
 
-.type-container .card-wrapper img {
-    width: 300px;
-    height: 300px;
-    margin: 2%;
+.text-highlight { 
+    color: var(--primary);
+    transition: 0.2s;
+    font-weight: bold;
 }
-.type-container .card-wrapper p {
-    margin: 0 25%;
+
+.text-highlight:hover {
+    background-color: var(--primary);
+    font-weight: bold;
+    color: var(--bg);
+}
+
+.card-container {
+    width: 90vw;
+    text-align: center;
+}
+
+.card-container .card {
+    display: inline-grid;
+    border: 1px solid var(--primary);
+    margin: 25px;
+    width: 20vw;
+    padding: 25px;
+    transition: 0.2s;
+}
+
+.card-links {
+    text-align: center;
+}
+
+.card h4 {
+    color: var(--primary);
+    font-family: "STRRETCH SANS FREE";
+}
+
+.card p {
+    color: white;
+    font-family: "Poppins";
+    text-align: right;
 
 }
 
-@media only screen and (max-width: 1000px) {
-    body {
-        overflow-x: hidden;
+.card:hover {
+    transform: translateY(5px);
+    border-width: 2px;
+    transition: 0.5s;
+}
+
+.work-link {
+    stroke: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.work-link:hover {
+    stroke: var(--primary);
+    width: 35px;
+    height: 35px;
+}
+
+@media(max-width: 1000px) {
+
+    svg {
+        width: 25px;
+        height: 25px;
     }
 
-    .about {
+    .checks-top {
+        right: 5vw;
+    }
+
+    .checks-bottom {
+        right: 8vw;
+        top: 85vh;
+    }
+
+    .heading-wrapper {
+        top: 50vh;
+        font-size: 1.3rem;
+    }
+
+    .landing-bottom {
+        top: 80vh;
+    }
+
+    .scroll-text {
+        font-size: 1rem;
+    }
+
+    h2 {
         position: relative;
-        display: block;
         margin: 0;
-        padding: 10px;
         left: 0;
-        font-size: 0.75em;
+    }
+    
+    section {
+        padding: 5vw;
     }
 
-    .landing {
+    
+
+    .about-content {
         position: relative;
-        left: 0;
+        font-size: 1rem;
+        line-height: inherit;
     }
 
-    .landing #picofme {
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .landing #picofme img{
-        padding: 5%;
-        width: 150px;
-        height: 150px;
-        border-radius: 30px;
-    }
-
-    .landing #supermainheading h1{
-        font-size: 2em;
-        text-align: center;
-        left: 0;
-    }
-
-    .links {
-        left: 0;
-        text-align: center;
+    .card-container {
         position: relative;
-        top: 0;
-    }
-
-    .links a {
-        display: inline-block;
         text-align: center;
-        margin: 5px;
-        padding: 7px;
-        width: 15px;
-        height: 15px;
-    }
-
-    .links a img {
-        width: 15px;
-        height: 15px;
-    }
-
-    .type-container{
-        text-align: center;
-        color: var(--primary);
-        font-family: "Merriweather";
-        padding: 1% 5%;
-        border-radius: 15px;
-        margin: 2%;
-    }
-
-    .type-container .card-wrapper p {
-        width: 100%;
         margin: 0;
     }
 
-    .type-container .card-wrapper img {
-        width: 150px;
-        height: 150px;
-        margin: 2%;
+    .card-container .card {
+        text-align: center;
+        width: 80vw;
+        margin: 10px 0;
+        height: inherit;
+        padding: 5px;
     }
 
-    .landing a {
-        font-size: 0.75rem;
-        margin-left: 2%;
-        margin-top: 25%;
-        display: inline-block;
+    .card p {
+        text-align: center;
     }
 
-    .home-button {
-        position: absolute;
-        top: 3%;
-        left: 10%;
-    }
-
-    .home-button a {
-        height: 20px;
+    .social-link {
         width: 20px;
+        height: 20px;
     }
 
-    .home-button a img {
-        height: 20px;
-        width: 20px;
+    .social-link:hover {
+        width: 25px;
+        height: 25px;
     }
 }

@@ -3,91 +3,39 @@
         <title>Rajat Varma</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap&subset=devanagari" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <style>
-            body {
-                background-color: var(--dark-bg);
+            h5 {
+                margin-top: 60vh;
+                margin-left: 5vw;
+                color: #9eff00;
+                font-family: "aemstel";
+                font-size: 1.25rem;
             }
 
-            #fourzerofour {
-                display: inline-block;
-                width: 100%;
-                text-align: center;
-                font-size: 3.5rem;
-            }
-
-            #fourzerofour #four {
-                display: inline-grid;
-            }
-
-            #fourzerofour #four h1 {
-                padding: 10px;
-            }
-
-            #fourzerofour #zero {
-                display: inline-grid;
-                padding-top: 10px;
-            }
-
-            #zero h1 {
-                padding: 20px;
-            }
-
-            .content {
-                margin-top: 10%;
-                color: var(--light-bg);
+            #returnbutton {
+                color: #9eff00;
                 font-family: "Poppins";
+                font-weight: bold;
+                padding: 10px;
+                display: inline-block;
+                margin-left: 5vw;
+                z-index: 10;
             }
-
-            h3 {
-                text-align: center;
-                padding: 50px;
-            }
-
-            #supermainheading {
-                font-size: 4rem;
-                color: var(--primary);
-                font-family: "Playfair Display";
-                max-width: 100%;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .content #returnbutton {
-                margin: auto;
-                width: 50%;
-                text-align: center;
-            }
-
-            .content #returnbutton a {
-                border: 2px solid;
-                text-transform  : uppercase;
-                border-color: var(--tertiary);
-                text-decoration: none;
-                border-radius: 15px;
-                color: var(--primary);
-                cursor: pointer;
-                text-align: center;
-                font-weight: 700;
-                padding: 15px;
-            }
-
         </style>
-        <div class="content">
-            <div id="fourzerofour">
-                <div id="four"><h1 id="supermainheading">4</h1></div>
-                <div id="zero"><h1 id="supermainheading">0</h1></div>
-                <div id="four"><h1 id="supermainheading">4</h1></div>
+        <div class="landing">
+            <div class="heading-wrapper">
+                <h1 class="stroke-head">404</h1>
+                <h1 class="stroke-head">404</h1>
+                <h1 class="stroke-head">404</h1>
+                <h1 class="stroke-head">404</h1>
+                <h1 class="fill-head">404</h1>
             </div>
-            <h3>
-                Uhhhh... How did you manage to get lost in a one page website?
-            </h3>
+            <h5 class="text">Uhhhh... How did you manage to get lost in a one page website?</h5>
             <div id="returnbutton">
-                <a href="index.html">Go back</a>
+                    <a href="index.html"><span class="text-highlight">Go to the homepage</span></a>
             </div>
         </div>
     </body>
