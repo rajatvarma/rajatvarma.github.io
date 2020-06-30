@@ -80,9 +80,9 @@ section {
 }
 
 .stroke-head {
-    color: var(--bg);
-    -webkit-text-stroke: 0.25px var(--primary);
-    -webkit-text-fill-color: var(-bg);
+    -webkit-text-stroke-width: 0.001px;
+    -webkit-text-stroke-color: var(--primary);
+    -webkit-text-fill-color: var(--bg);
     margin-top: -35px;
     font-family: "STRRETCH SANS FREE";
     margin-bottom: 0;
@@ -149,12 +149,18 @@ h2 {
     text-align: center;
 }
 
-.card h4 {
+.card h4, .card h3 {
     color: var(--primary);
     font-family: "STRRETCH SANS FREE";
 }
 
-.card p {
+.card li {
+    color: var(--primary);
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.card p{
     color: white;
     font-family: "Poppins";
     text-align: right;
