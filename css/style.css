@@ -73,7 +73,7 @@ section {
 }
 
 .stroke-head {
-    -webkit-text-stroke-width: 0.001px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: var(--primary);
     -webkit-text-fill-color: var(--bg);
     margin-top: -35px;
