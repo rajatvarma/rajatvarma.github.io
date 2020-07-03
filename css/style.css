@@ -3,16 +3,9 @@
     --primary: #9eff00;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-
 @font-face {
     font-family: "STRRETCH SANS FREE";
     src: url("fonts/STRRETCHSANSFREE.ttf");
-    }
-
-@font-face {
-    font-family: "Kayak Sans";
-    src: url("fonts/Kayak Sans Regular.otf")
 }
 
 @font-face {
@@ -113,7 +106,7 @@ section {
     line-height: 30px;
 }
 
-h2 {
+#content h1 {
     font-size: 1.7rem;
     font-family: "Aemstel";
     color: var(--primary);
@@ -149,9 +142,11 @@ h2 {
     text-align: center;
 }
 
-.card h4, .card h3 {
+.card h2 {
     color: var(--primary);
     font-family: "STRRETCH SANS FREE";
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
 .card li {
