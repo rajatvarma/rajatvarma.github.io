@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "STRRETCH SANS FREE";
-    src: url("fonts/STRRETCHSANSFREE.ttf");
+    font-family: "Monument";
+    src: url("fonts/MonumentExtended-Regular.otf");
 }
 
 @font-face {
@@ -73,18 +73,18 @@ section {
 }
 
 .stroke-head {
-    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: var(--primary);
     -webkit-text-fill-color: var(--bg);
-    margin-top: -35px;
-    font-family: "STRRETCH SANS FREE";
+    margin-top: -40px;
+    font-family: "Monument";
     margin-bottom: 0;
 }
 
 .fill-head {
     color: var(--primary);
-    font-family: "STRRETCH SANS FREE";
-    margin-top: -35px;
+    font-family: "Monument";
+    margin-top: -40px;
 }
 
 .landing-bottom {
@@ -94,7 +94,7 @@ section {
 }
 
 .scroll-text {
-    font-family: "STRRETCH SANS FREE";
+    font-family: "Monument";
     color: var(--primary);
 }
 
@@ -144,7 +144,7 @@ section {
 
 .card h2 {
     color: var(--primary);
-    font-family: "STRRETCH SANS FREE";
+    font-family: "Monument";
     font-size: 1rem;
     margin-top: 5px;
 }
