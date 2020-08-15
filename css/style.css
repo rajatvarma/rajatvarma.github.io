@@ -3,6 +3,17 @@
     --primary: #9eff00;
 }
 
+::-moz-selection {
+    color: var(--bg);
+    background: var(--primary);
+}
+  
+::selection {
+    color: var(--bg);
+    background: var(--primary);
+}
+
+
 @font-face {
     font-family: "Monument";
     src: url("fonts/MonumentExtended-Regular.otf");
@@ -28,6 +39,10 @@ section {
     position: relative;
     min-height: 100vh;
     padding: 0 5vw;
+}
+
+#landing {
+    font-family: "Monument";
 }
 
 .checks-top {
@@ -77,13 +92,11 @@ section {
     -webkit-text-stroke-color: var(--primary);
     -webkit-text-fill-color: var(--bg);
     margin-top: -40px;
-    font-family: "Monument";
     margin-bottom: 0;
 }
 
 .fill-head {
     color: var(--primary);
-    font-family: "Monument";
     margin-top: -40px;
 }
 
@@ -94,7 +107,6 @@ section {
 }
 
 .scroll-text {
-    font-family: "Monument";
     color: var(--primary);
 }
 
@@ -136,6 +148,7 @@ section {
     width: 20vw;
     padding: 25px;
     transition: 0.2s;
+    font-family: "Poppins";
 }
 
 .card-links {
@@ -149,15 +162,8 @@ section {
     margin-top: 5px;
 }
 
-.card li {
-    color: var(--primary);
-    text-align: left;
-    font-family: "Poppins";
-}
-
 .card p{
     color: white;
-    font-family: "Poppins";
     text-align: right;
 
 }

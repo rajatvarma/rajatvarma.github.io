@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section>
+        <section id="landing">
             <div class="checks-top">
                 <a href="https://instagram.com/_rajatvarma">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="social-link" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -45,7 +45,7 @@
                     find out more <br>about me.
                 </h2>
             </div>
-            <div class="checks-bottom">
+            <div class="checks-bottom" id="Lol" onclick="prankLol()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9EFF00" stroke-width="2" stroke-linecap="square" stroke-linejoin="square">
                     <line x1="12" y1="5" x2="12" y2="19"></line>
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -139,5 +139,17 @@
             });
         </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152998338-1"></script>
+        <script>
+            var count = 0;
+            function prankLol() {
+                count++;
+                if (count == 6){
+                    document.getElementById("landing").style.fontFamily = "Webdings";
+                    console.log("Lol")
+                    count == 0;
+                }
+                console.log(count);
+            }
+        </script>
     </body>
 </html>

@@ -8,3 +8,5 @@ function linksPosition(){
         document.getElementById("personalize").innerHTML = "beside";
     }
 }
+
+
