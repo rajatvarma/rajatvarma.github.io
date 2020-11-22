@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New design???</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script type="module">
+
+        import * as THREE from 'https://unpkg.com/three@0.122.0/build/three.module.js';
+      
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        const coneGeometry = new THREE.ConeGeometry(1, 2, 10);
+    
+        const coneWireFrame = new THREE.WireframeGeometry(coneGeometry);
+        const coneLines = new THREE.LineSegments(coneWireFrame);
+        const coneLinesMaterial = new THREE.LineBasicMaterial ({color: 0x9EFF00});
+        
+        coneLines.material.depthTest = false;
+        coneLines.material.opacity = 0.5;
+        coneLines.material.transparent = true;
+        
+        const coneMaterial = new THREE.MeshBasicMaterial({color: 0x171A27});    
+        const cone = new THREE.Mesh(coneGeometry, coneMaterial);
+        const coneMesh = new THREE.Mesh(coneWireFrame, coneLinesMaterial);
+        cone.rotateX = 60;
+
+        const plane1Geometry = new THREE.PlaneGeometry(5, 5, 32, 32);
+        const plane1Material = new THREE.MeshBasicMaterial({color: 0x9EFF00, side: THREE.DoubleSide});
+        const plane1Mesh = new THREE.Mesh(plane1Geometry, plane1Material);
+        const plane2Geometry = new THREE.PlaneGeometry(5, 5, 32, 32);
+        const plane2Material = new THREE.MeshBasicMaterial({color: 0x9EFF00, side: THREE.DoubleSide});
+        const plane2Mesh = new THREE.Mesh(plane2Geometry, plane2Material);
+        plane1Mesh.rotateX(80);
+        plane2Mesh.rotateX(-80);
+        plane1Mesh.position.y = 3;
+        plane2Mesh.position.y = -3;
+        plane1Mesh.scale.x = 2;
+        plane2Mesh.scale.x = 2;
+
+        scene.add(coneLines, plane1Mesh, plane2Mesh);
+        camera.position.z = 5;
+
+        function animate() {
+	        requestAnimationFrame( animate );
+            coneLines.rotation.y += 0.01;
+            //plane1Mesh.position.z += 0.01;
+            //plane2Mesh.position.z -= 0.01;
+	        renderer.render( scene, camera );
+        }
+        animate();
+      </script>
+</body>
+</html>
