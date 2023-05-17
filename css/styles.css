@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Fira Code";
+    src: url(../css/fonts/FiraCode-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Fira Code Medium";
+    src: url(../css/fonts/FiraCode-Medium.ttf);
+}
+
 body {
     font-family: "Fira Code", monospace;
     font-size: smaller;
@@ -90,12 +100,12 @@ body {
 
 
 pre {
-    font-family: Fira Code;
+    font-family: "Fira Code", monospace;
 }
 
 .title {
     font-size: 1.1rem;
-    font-family: "Fira Code Medium";
+    font-family: "Fira Code Medium", monospace;
 }
 
 .skill {
@@ -113,7 +123,6 @@ pre {
     border: none;
 }
 
-/* //modify scrollbar style */
 ::-webkit-scrollbar {
     width: 10px;
 }
