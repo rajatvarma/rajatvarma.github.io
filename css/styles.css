@@ -16,6 +16,11 @@ body {
     margin: 0;
 }
 
+.crazy-text {
+    display: flex;
+    flex-direction: row;
+}
+
 .window button {
     border: none;
     background-color: #14d63b;
@@ -46,7 +51,7 @@ body {
     color: #14d63b;
     box-shadow: #14d63b 0px 0px 10px;
     border-radius: 5px;
-    margin: 2vh 2vw;
+    margin: 2vh 1vw;
     height: 95vh;
 }
 
@@ -139,16 +144,27 @@ pre {
 
 @media(max-width: 600px) {
     body {
-        font-size: 0.8rem;
-        background-color: #14d63b;
+        font-size: 0.64rem;
     }
 
     .window-container {
         height: 90%;
-        
+        overflow-x: hidden;
+        overflow-wrap: normal;        
     }
 
     .window {
-        /* max-width: 100vw; */
+        max-width: 100vw;
+        word-wrap: break-word;
+        margin: 0;
+        height: 99vh;
+    }
+
+    .crazy-text {
+        flex-direction: column;
+    }
+
+    pre {
+        max-width: 100vw;
     }
 }

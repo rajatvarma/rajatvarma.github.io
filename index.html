@@ -11,7 +11,7 @@
     <body>
         <div class="window">  
             <div style="display: flex; justify-content: space-between; align-items: center; background-color: #14d63b; color: white; padding: 1px 2px;">
-                <div class="title-bar-text">C:\users\rajat\website.exe</div>
+                <div class="title-bar-text"></div>
                 <div class="title-bar-controls">
                   <button aria-label="Minimize">—</button>
                   <button aria-label="Maximize">□</button>
@@ -21,14 +21,24 @@
 <div class="window-container">
 <div style="display: flex; align-items: center;">
     <div>
+<div class="crazy-text">
 <pre>
-██╗░░██╗██╗██╗           _____               ____          _       __ 
-██║░░██║██║██║          /  _( )____ ___     / __ \____ _  (_____ _/ /_
-███████║██║██║          / / |// __ `__ \   / /_/ / __ `/ / / __ `/ __/
-██╔══██║██║╚═╝        _/ /   / / / / / /  / _, _/ /_/ / / / /_/ / /_  
-██║░░██║██║██╗       /___/  /_/ /_/ /_/  /_/ |_|\__,___/ /\__,_/\__/  
-╚═╝░░╚═╝╚═╝╚═╝,                                     /___/             
+██╗░░██╗██╗██╗           
+██║░░██║██║██║         
+███████║██║██║          
+██╔══██║██║╚═╝
+██║░░██║██║██╗
+╚═╝░░╚═╝╚═╝╚═╝
 </pre>
+<pre>
+    _____               ____          _       __ 
+   /  _( )____ ___     / __ \____ _  (_____ _/ /_
+   / / |// __ `__ \   / /_/ / __ `/ / / __ `/ __/
+ _/ /   / / / / / /  / _, _/ /_/ / / / /_/ / /_  
+/___/  /_/ /_/ /_/  /_/ |_|\__,___/ /\__,_/\__/  
+                               /___/             
+</pre>
+</div>
 <p style="text-align: justify;">Second-year student at Ashoka University.<br>Pursuing a Bachelor's degree in Computer Science.<br>Interested in web development, computer hardware and systems, and AI.</p>
 </div>
 <!-- <pre style="font-size: 0.25rem; letter-spacing: 0px; color: #000000; color: #14d63b; font-weight: 700; line-height: 2.5px;display: flex; width: min-content; padding: 5px;",>
@@ -205,4 +215,20 @@ $%?%%%?%?%%$######@@@@########$%??%%%?????*+::::+*+;:::;;......,;;::+++*???????*
             </div>
         </div>
     </body>
+
+<script>
+console.log(navigator.userAgent)
+userAgent = navigator.userAgent.toLowerCase();
+if (userAgent.includes('android')) {
+    document.getElementsByClassName('title-bar-text')[0].innerHTML = '/data/rajat.apk';
+} else if (userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('ipod')) {
+    document.getElementsByClassName('title-bar-text')[0].innerHTML = 'rajat.ipa';
+} else if (userAgent.includes('windows')) {
+    document.getElementsByClassName('title-bar-text')[0].innerHTML = 'c:/program files/rajat.exe';
+} else if (userAgent.includes('mac')) {
+    document.getElementsByClassName('title-bar-text')[0].innerHTML = 'home/applications/rajat/rajat.dmg';
+} else if (userAgent.includes('linux')) {
+    document.getElementsByClassName('title-bar-text')[0].innerHTML = '~/rajat';
+}
+</script>
 </html>
