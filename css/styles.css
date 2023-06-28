@@ -10,7 +10,7 @@
 
 body {
     font-family: "Fira Code", monospace;
-    font-size: smaller;
+    font-size: normal;
     color: #0A0908;
     background-color: #0A0908;
     margin: 0;
@@ -41,7 +41,7 @@ body {
 }
 
 .window {
-    background-color: #00131a;
+    background-color: #111111;
     border: 2px solid #14d63b;
     color: #14d63b;
     box-shadow: #14d63b 0px 0px 10px;
@@ -133,4 +133,22 @@ pre {
 
 ::-webkit-scrollbar-thumb {
     background: #14d63b;
+}
+
+/* styles for mobile devices */
+
+@media(max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+        background-color: #14d63b;
+    }
+
+    .window-container {
+        height: 90%;
+        
+    }
+
+    .window {
+        /* max-width: 100vw; */
+    }
 }
