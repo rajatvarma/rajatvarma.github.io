@@ -37,7 +37,7 @@ body {
 
 section {
     position: relative;
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 0 5vw;
 }
 
@@ -94,13 +94,13 @@ a {
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: var(--primary);
     -webkit-text-fill-color: var(--bg);
-    margin-top: -40px;
+    margin-top: -60px;
     margin-bottom: 0;
 }
 
 .fill-head {
     color: var(--primary);
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .landing-bottom {
@@ -116,7 +116,7 @@ a {
 .about-content {
     color: white;
     font-family: "Poppins";
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     font-size: 1rem;
     line-height: 30px;
 }
@@ -167,7 +167,7 @@ a {
 
 .card p{
     color: white;
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -179,6 +179,7 @@ a {
 
 .work-link {
     stroke: white;
+    fill: white;
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -187,8 +188,180 @@ a {
 
 .work-link:hover {
     stroke: var(--primary);
+    fill: var(--primary);
     width: 35px;
     height: 35px;
+}
+
+/* Section Icons */
+.section-icon {
+    width: 28px;
+    height: 28px;
+    stroke: var(--primary);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Card Icons */
+.card-icon {
+    margin-bottom: 15px;
+}
+
+.card-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: var(--primary);
+}
+
+/* Tech Stack Labels */
+.tech-stack {
+    font-size: 0.85rem;
+    color: var(--primary);
+    opacity: 0.8;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Experience Cards */
+.experience-card .company-name {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-card .date-range {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 5vw;
+}
+
+.skill-category {
+    background: rgba(158, 255, 0, 0.05);
+    border: 1px solid rgba(158, 255, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.skill-category:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.skill-category h3 {
+    color: var(--primary);
+    font-family: "Monument";
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 20px;
+    height: 20px;
+    stroke: var(--primary);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: rgba(158, 255, 0, 0.1);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: "Poppins";
+    transition: 0.2s;
+}
+
+.skill-tag:hover {
+    background: var(--primary);
+    color: var(--bg);
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 5vw;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: "Poppins";
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--primary);
+    fill: var(--primary);
+}
+
+.contact-btn:hover {
+    background: var(--primary);
+    color: var(--bg);
+}
+
+.contact-btn:hover svg {
+    stroke: var(--bg);
+    fill: var(--bg);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 5vw;
+    border-top: 1px solid rgba(158, 255, 0, 0.2);
+    margin-top: 50px;
+}
+
+.footer p {
+    color: #888;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+}
+
+/* Social Link Fill */
+.social-link {
+    stroke: var(--primary);
+    fill: var(--primary);
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.social-link:hover {
+    transition: 0.1s;
+    stroke: aliceblue;
+    fill: aliceblue;
 }
 
 @media(max-width: 1000px) {
@@ -254,7 +427,7 @@ a {
         width: 80vw;
         margin: 10px 0;
         height: inherit;
-        padding: 5px;
+        padding: 15px;
     }
 
     .card p {
@@ -269,5 +442,29 @@ a {
     .social-link:hover {
         width: 25px;
         height: 25px;
+    }
+
+    .section-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .skill-category {
+        padding: 15px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-btn {
+        width: 80%;
+        justify-content: center;
     }
 }
